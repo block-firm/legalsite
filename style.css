@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+nav .logo {
+    max-width: 15%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: black;
+}
+
+.hero {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-content {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    max-width: 30%;
+    margin-left: 100px;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-left: 100px;
+    margin-top: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.hero a {
+    margin-left: 100px;
+    background: navy;
+    color: white;
+    padding: .5rem 2rem;
+    font-size: 10px;
+}
+
+header {
+    background-image: url(assets/office-exterior.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+
+/* ABOUT SECTION */
+
+.about-container {
+    padding: 50px 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.about-title {
+    flex: 1;
+    margin-left: 80px;
+}
+
+.about-content {
+    flex: 1;
+    margin-right: 80px;
+}
+
+.about-title h2 {
+    font-size: 3rem;
+}
+
+.about-eyebrow::after {
+    content: "";
+    background: red;
+    display: inline;
+    height: 2px;
+    width: 10%;
+    position: absolute;
+    margin-left: 5px;
+    top: 848px;
+}
+
+.about-content p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-content a {
+    background: navy;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 2rem; /* Why is this doing nothing? It is not moving the element down at all */
+}
+
+.practice-areas {
+    padding: 50px 50px;
+    background-image: url(Assets/white-texture.jpg);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin: 3rem;
+}
+
+.grid-item {
+    padding: 10px 15px;
+    border-bottom: solid 2px navy;
+    background: #fff;
+}
+
+.practice-areas-title {
+    text-align: center;
+}
+
+.grid-item h3 {
+    margin-bottom: 5px;
+}
+
+/* .practice-areas-service {
+    text-align: left;  /* why does this not make the p tag left aligned with 'Areas of Expertise'? */
+
+/* } */
+
+/* .practice-areas-service::after {
+        content: "";
+        background: red;
+        display: inline;
+        height: 2px;
+        width: 5%;
+        position: absolute;
+        bottom: -195px;
+        margin-left: 10px;
+} */
+
+/* MEET TEAM SECTION*/
+
+.meet-team {
+    /* margin-top: 2rem; */
+    /* padding: 10px 3rem; */
+    display: flex;
+}
+
+.meet-team-img-container {  /* I tried adding max-width here and it did not change the img size*/
+    flex: 1;
+    min-height: 100%;
+}
+
+.meet-team-content {
+    flex: 1;
+    padding-left: 3rem;
+    background: navy;
+    color: white;
+    overflow: none;
+    min-height: 100%;
+}
+
+.meet-team-img-container img {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.meet-team-content h2 {
+    margin-bottom: 2rem;
+    font-size: 40px;
+    max-width: 60%;
+    margin-top: 2rem;
+}
+
+.meet-team-content a {
+    color: navy;
+    background: white;
+    margin-top: 20px; /* Again margin-top is not working, why? Also how do i make both my flexbox children the same height? */
+    padding: 10px 20px;
+    font-size: 10px;
+}
+
+.meet-team-content p {
+    margin-bottom: 20px;
+}
+
+/* TESTIMONIAL */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonial {
+    max-width: 25%;
+    padding: 10px 15px;
+    border: solid 1px rgba(200, 194, 194, 0.699);
+    border-bottom: solid 3px navy;
+    text-align: center;
+}
+
+.testimonial p:nth-child(2) {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+/* ---ABOUT PAGE SECTION--- */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+textarea {
+    height: 150px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 3.75rem;
+
+}
+
+.forms-flex {
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 20px;
+    flex: 2;
+}
+
+.col-25 {
+    width: 20%;
+    margin-top: 6px;
+    float: left;
+    /* display: inline; */
+}
+
+.col-75 {
+    width: 75%;
+    margin-top: 6px;
+    float: left;
+}
+
+.form-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.forms-flex-container {
+    display: flex;
+    margin: 3rem 2rem;
+    align-items: center;
+}
+
+.forms-flex-content {
+    flex: 1;
+}
+
+.forms-flex-content h2 {
+    color: #04aa6d; 
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.forms-flex-content p {
+    max-width: 90%;
+}
+
+.service-highlights-container {
+    display: flex;
+    justify-content: center;
+}
+
+.service-highlight {
+    padding: 1rem 2rem;
+    /* background: #e8e1dd; */
+    background: #04aa6d;
+    color: white;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+
+.visit-office-container {
+    display: flex;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    align-items: start;
+    background: rgb(230, 226, 226);
+}
+
+.visit-office-content {
+    flex: 1;
+    margin-top: 7rem;
+
+}
+
+.visit-office-image {
+    flex: 1;
+}
+
+.visit-office-image img {
+    max-width: 500px;
+}
+
+.visit-office-content h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.visit-office-content p {
+    max-width: 80%;
+    color: rgb(107, 106, 106);
+    margin-bottom: 2rem;
+}
+
+.visit-office-content a {
+    color: #f50000;
+    border: 2px solid #f50000;
+    padding: .75rem 1.5rem;   
+}
+
+/*-- ACCORDIoN SECTION --*/
+
+.accordion {
+    background: #eee;
+    color: red;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    transition: 0.4s;
+}
+
+.accordion:hover {
+    background: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background: #fff;
+    overflow: hidden;
+    display: none;
+}
