@@ -105,10 +105,28 @@
                 <div class="panel">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, omnis magni. Nemo nesciunt nisi est quas provident maxime adipisci asperiores esse. Voluptas soluta nesciunt sapiente, voluptates aperiam enim autem tenetur!</p>
                 </div>
-
             </div>
-        </section>
+           
+            <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
 
+                    for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+
+                        this.classList.toggle("active");
+
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        } else {
+                        panel.style.display = "block";
+                        }
+                    });
+                    }
+            </script>
+            
+        </section>
     </main>
 </body>
 </html>
