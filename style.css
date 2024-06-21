@@ -383,6 +383,14 @@ input[type=submit] {
 
 /*-- ACCORDIoN SECTION --*/
 
+.accordion-section {
+    margin: 5% 5%;
+}
+
+.accordion-section h2 {
+    margin-bottom: 20px;
+}
+
 .accordion {
     background: #eee;
     color: red;
@@ -404,3 +412,15 @@ input[type=submit] {
     overflow: hidden;
     display: none;
 }
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
